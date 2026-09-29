@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes - Day 1</title>
+</head>
+<body>
+    <header>
+        <h1>QuickNotes</h1>
+        <p>Your simple web note-taking application</p>
+    </header>
+
+    <main>
+        <section id="note-input">
+            <h2>Create a Note</h2>
+            <form>
+                <label for="title">Note Title:</label><br>
+                <input type="text" id="title" name="title" placeholder="Enter title..."><br><br>
+
+                <label for="content">Note Content:</label><br>
+                <textarea id="content" name="content" rows="4" placeholder="Write your note here..."></textarea><br><br>
+
+                <button type="button">Save Note</button>
+            </form>
+        </section>
+
+        <section id="notes-list">
+            <h2>Your Notes</h2>
+            <article class="note">
+                <h3>Welcome to QuickNotes</h3>
+                <p>This is your first sample note rendered in plain HTML!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuickNotes App. Built for Power Learn Project Web Foundations.</p>
+    </footer>
+</body>
+</html>
