@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Directory - Day 5</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 650px; margin: 2rem auto; padding: 0 1rem; color: #333; line-height: 1.5; }
+        .controls { display: flex; flex-direction: column; gap: 1rem; background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        input { padding: 0.5rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 0.6rem 1rem; font-size: 1rem; background-color: #2c3e50; color: white; border: none; border-radius: 4px; cursor: pointer; width: fit-content; }
+        button:disabled { background-color: #95a5a6; cursor: not-allowed; }
+        #status { font-weight: bold; margin-bottom: 1rem; }
+        #users-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem; }
+        .user-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+    <h1>User Directory</h1>
+    
+    <div class="controls">
+        <button id="load-users">Load Users</button>
+        <div>
+            <label for="filter-input">Filter by name:</label><br>
+            <input type="text" id="filter-input" placeholder="Type a name...">
+        </div>
+    </div>
+
+    <p id="status">Click "Load Users" to fetch data.</p>
+    <ul id="users-list"></ul>
+
+    <script src="users.js" defer></script>
+</body>
+</html>
